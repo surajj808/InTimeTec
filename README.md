@@ -21,3 +21,4 @@ Backend: Must use Private SLM (pick any Small Language Model that can be hosted 
 -         model_kwargs={"device": "cpu"} --> model_kwargs={"device": "auto"}
 - In case of any runtime error, re-run the code. 
 - In case of any other Embedding / Tokenizer / LLM model from Hugging Face, make sure you have the access to the model on HuggingFace Hub (if needed). If access needed, make sure to pass the **Huggingface_api_key** in Pipeline.
+- Streamlit UI run on a **localhost:8501** by default, make sure the port is available. 
