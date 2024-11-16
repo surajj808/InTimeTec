@@ -2,14 +2,14 @@
 
 ## Problem-Statement:
 
-- '''Build a basic UI (using Gradio, Streamlit, or a simple cURL command) that allows a user to upload a PDF. The user can then ask questions that may or may not have answers in the uploaded PDF(s). For questions that have answers in the PDF(s), the system should return valid responses. For questions without sufficient information in the PDF, it should respond with “I don’t know the answer as not sufficient information is provided in the PDF” (no hallucination).
-Backend: Must use Private SLM (pick any Small Language Model that can be hosted locally); use an open-source vector database (in-memory or any choice)'''
+- Build a basic UI (using Gradio, Streamlit, or a simple cURL command) that allows a user to upload a PDF. The user can then ask questions that may or may not have answers in the uploaded PDF(s). For questions that have answers in the PDF(s), the system should return valid responses. For questions without sufficient information in the PDF, it should respond with “I don’t know the answer as not sufficient information is provided in the PDF” (no hallucination).
+Backend: Must use Private SLM (pick any Small Language Model that can be hosted locally); use an open-source vector database (in-memory or any choice)
 
 ## Environment:
 - Python v3.10 or higher
 - VS Code environment preferred
 - If using Jupyter notebook or Google Colab, mention the below magic command at the start:
-          %%writefile app.py
+-                     %%writefile app.py
 
 ## Dependencies: 
 - Create a virtual environment by using the below command in Powershell terminal: 
