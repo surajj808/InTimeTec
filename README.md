@@ -1,7 +1,3 @@
-# InTimeTec
-AI Assessment
-
-
 RAG-Based Chat System
 
 Problem-Statement:
