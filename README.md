@@ -15,8 +15,9 @@ Backend: Must use Private SLM (pick any Small Language Model that can be hosted 
 - Create a virtual environment by using the below command in Powershell terminal:
 -            python -m venv venv_name
 -        venv_name\Scripts\Activate.ps1
-- run the requirements.txt file (!pip install requirements.txt)
+- run the requirements.txt file:
+-         !pip install requirements.txt
 - If GPU is available, make sure to make changes to the below code block:
-        model_kwargs={"device": "cpu"} --> model_kwargs={"device": "auto"}
+-         model_kwargs={"device": "cpu"} --> model_kwargs={"device": "auto"}
 - In case of any runtime error, re-run the code. 
-- In case of any other Embedding / Tokenizer / LLM model from Hugging Face, make sure you have the access to the model on HuggingFace Hub (if needed). If access needed, make sure to pass the Huggingface_api_key in Pipeline.
+- In case of any other Embedding / Tokenizer / LLM model from Hugging Face, make sure you have the access to the model on HuggingFace Hub (if needed). If access needed, make sure to pass the **Huggingface_api_key** in Pipeline.
