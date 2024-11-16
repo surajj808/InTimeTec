@@ -9,7 +9,7 @@ Backend: Must use Private SLM (pick any Small Language Model that can be hosted 
 - Python v3.10 or higher
 - VS Code environment preferred
 - If using Jupyter notebook or Google Colab, mention the below magic command at the start:
-- %%writefile app.py
+-            %%writefile app.py
 
 ## Dependencies: 
 - Create a virtual environment by using the below command in Powershell terminal: 
