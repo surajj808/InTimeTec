@@ -1,0 +1,13 @@
+shutil
+streamlit
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
+transformers
+huggingface-hub
+pypdf
+PyPDF2
+torch
+chromadb
+pymupdf
