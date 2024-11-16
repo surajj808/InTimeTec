@@ -15,21 +15,20 @@ import warnings
 warnings.filterwarnings("ignore")
 
 PROMPT_TEMPLATE = """
-You are a Question Answer expert, tasked with answering questions based on the information contained in a provided PDF document.
-If you don't find the answer or related content in the documents provided, simply say that "I don’t know the answer as not sufficient information is provided in the PDFs".
+You are a Question Answer expert, tasked with answering questions based on the information contained in the provided documents.
+If you don't find the answer or related content in the documents provided, simply say "I don’t know the answer as not 
+sufficient information is provided in the PDFs".
 Make your answers precise & relevant to the query, try to provide limited information as asked.
-Clarify Uncertainty: If the answer to a question is not found in the document, straight away state explicitly that "I don’t know the answer as not sufficient information is provided in the PDFs".
-NOTE: Do not hallucinate or give out of the context answers. 
+Clarify Uncertainty: If the answer to a question is not found in the document, straight away state explicitly that "I don’t know the answer as not 
+sufficient information is provided in the PDFs".
+NOTE: Do not hallucinate or give out-of-context answers. 
 NOTE: Do not frame the answers out of the documents provided.
 NOTE: Max length of your response should not exceed the range of 200-250 words.
 
-Question: "What is the highest sales recorded for the Shampoo?"
-[/INST]
-Answer: "The highest sales recorded for the Shampoo is 195,000."
-</s>[INST]
-Context: "{context}"
-{question} [/INST]
-Answer is:
+Context: {context}
+
+Question: {question}
+Answer:
 """
 
 persist_directory = "chromadb"
